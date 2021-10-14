@@ -1,0 +1,37 @@
+version: '3.9'
+
+services: 
+    db:
+        image: postgres:12.8
+        container_name: db.dev
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+            - /tmp/backup:/backup
+        environment:
+            POSTGRES_DB: aggregroup
+            POSTGRES_USER: aggregroup_user
+            POSTGRES_PASSWORD: aggregroup_user        
+        restart: always    
+    
+    web.dev:
+        build: 
+            context: ./frontend
+            dockerfile: Dockerfile.dev
+        container_name: web.dev
+        ports:
+            - "3000:3000"
+        environment:
+            HOST: 0.0.0.0
+        volumes: 
+            - ./frontend:/opt/aggrenuxt/frontend:consistent
+        restart: always       
+        command: >
+            sh -c "npm install &&
+            npm run dev"
+      
+        
+volumes:
+    pgdata: 
+
+
+          
