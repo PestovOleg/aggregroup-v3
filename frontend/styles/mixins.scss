@@ -1,0 +1,78 @@
+@import "./colors";
+
+@mixin h6MainPage {
+    font-weight: 400;
+    @media(min-width: 360px) {
+      font-size: 10px;
+    }
+    
+    @media(min-width: 720px) {
+      font-size: 14px;
+    }
+  
+    
+    @media(min-width: 960px) {
+      font-size: 16px;
+    }
+    
+    @media(min-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+
+  @mixin h1MainPage {
+    @media(min-width: 360px) {
+      font-size: 16px;
+    }
+    
+    @media(min-width: 720px) {
+      font-size: 30px;
+    }
+  
+    
+    @media(min-width: 960px) {
+      font-size: 35px;
+    }
+    
+    @media(min-width: 1440px) {
+      font-size: 45px;
+    }
+  }
+
+  @mixin textSize {
+    @media(min-width: 360px) {
+      font-size: 10px;
+    }
+    
+    @media(min-width: 720px) {
+      font-size: 14px;
+    }
+  
+    
+    @media(min-width: 960px) {
+      font-size: 16px;
+    }
+    
+    @media(min-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+
+  @mixin hLinkCard {
+    @media(min-width: 360px) {
+      font-size: 18px;
+    }
+    
+    @media(min-width: 720px) {
+      font-size: 20px;
+    }
+  
+    
+    @media(min-width: 960px) {
+      font-size: 24px;
+    }
+    
+    @media(min-width: 1440px) {
+      font-size: 26px;
+    }
+  }

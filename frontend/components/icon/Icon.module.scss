@@ -1,0 +1,19 @@
+.icon {
+  &:hover {
+    cursor: pointer;
+  }
+  &Md {
+    width: 27px;
+    height: 27px;
+  }
+  &Lg {
+    width: 33px;
+    height: 33px;
+  }
+  &SVGPath { //TODO разобраться с наведением на окрашивании другой области
+    fill: $main-theme-color-green;
+    &:hover {
+      fill: $icon-hover;
+    }
+  }
+}

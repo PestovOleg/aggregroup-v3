@@ -5,8 +5,7 @@ WORKDIR /opt/aggregroup/frontend/
 COPY /package*.json /opt/aggregroup/frontend/
 # update and install dependency
 RUN apt-get update && apt-get upgrade --yes
-RUN apt-get --yes install \
-    nasm \
+RUN apt-get --yes install \    
     && npm install \
     && apt-get clean
 # copy the app, note .dockerignore

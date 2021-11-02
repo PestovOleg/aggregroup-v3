@@ -23,7 +23,9 @@ services:
         environment:
             HOST: 0.0.0.0
         volumes: 
-            - ./frontend:/opt/aggrenuxt/frontend:consistent
+            - ./frontend:/opt/aggregroup/frontend
+            - /opt/aggregroup/node_modules
+            - /opt/aggregroup/next
         restart: always       
         command: >
             sh -c "npm install &&

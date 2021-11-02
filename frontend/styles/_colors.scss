@@ -1,0 +1,38 @@
+$main-theme-color-green: #07a396;
+$main-theme-color-brown: #e5e5e5;
+$main-theme-color-orange: #ea5400;
+$main-theme-color-white: #ffffff;
+$main-theme-color-grey: #e5e5e5;
+$main-theme-color-dark-grey: #DADADA;
+$main-theme-color-black: #1A242A;
+
+$main-text-color-white: #ffffff;
+
+$icon-hover: #ea5400;
+
+.color {
+  &White {
+    color: $main-theme-color-white;
+  }
+  &Grey {
+    color: $main-theme-color-grey;
+  }
+  &Green {
+    color: $main-theme-color-green;
+  }
+  &Black {
+    color: $main-theme-color-black;
+  }
+}
+
+.background {
+    &Green {
+        background-color: $main-theme-color-green;
+    }
+    &Grey {
+      background-color: $main-theme-color-grey;
+    }
+    &White {
+      background-color: $main-theme-color-white;
+    }
+}

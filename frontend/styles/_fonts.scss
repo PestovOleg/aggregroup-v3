@@ -1,0 +1,63 @@
+@import "./mixins";
+
+@font-face {
+  font-family: "Styrene";
+  src: url("../assets/fonts/StyreneAWeb-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Styrene";
+  src: url("../assets/fonts/StyreneAWeb-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Styrene";
+  src: url("../assets/fonts/StyreneAWeb-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Styrene";
+  src: url("../assets/fonts/StyreneAWeb-Light.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+// TODO: вырубить и удалить все ненужные шрифты с файлами
+
+$carousel-caption-size: 79px;
+$carousel-text-size: 26px;
+
+$menu-font-size-lg: 14px;
+$menu-font-size-md: 12px;
+
+$h1-main-page-lg: 45px;
+$h1-main-page-md: 35px;
+$h1-main-page-sm: 30px;
+$h1-main-page-xs: 16px;
+
+$h6-main-page-lg: 18px;
+
+
+
+.lowHeader{
+  @include h6MainPage;
+  margin: auto;
+}
+
+.bigHeader{
+  @include h1MainPage;
+  margin: auto;
+}
+
+.text {
+  @include textSize;
+}
+
+.hLinkCard {
+  @include hLinkCard;
+}

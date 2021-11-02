@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  z-index: 1500;
+  font-size: $menu-font-size-lg;
+
+  @media (max-width: 1440px) {
+    font-size: $menu-font-size-md;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 -4px;
+  & > .blockIcon {
+    flex: 1 1 auto;
+    margin: 0 4px;
+  }
+}
+
+.icons > .cartIcon {
+  margin-left: 10px;
+}

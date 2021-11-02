@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./fonts";
+@import "./colors";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerChild {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.phones {
+  text-align: right;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  :hover {
+    color: $icon-hover;
+  }
+  > a {
+    color: #ffffff;
+    margin-bottom: 3px;
+    text-decoration: none;
+  }
+}
