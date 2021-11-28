@@ -1,6 +1,6 @@
 import { Component, Fragment } from "react";
 import Navbar from "../navbar/navbar";
-
+import Footer from "../footer/footer";
 
 class RuLayout extends Component {
   constructor(props) {
@@ -9,8 +9,9 @@ class RuLayout extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar /* className="backgroundGreen" *//> {/* TODO: реализовать через redux */}
+        <Navbar/> 
         {this.props.children}
+        <Footer/>
       </Fragment>
     );
   }

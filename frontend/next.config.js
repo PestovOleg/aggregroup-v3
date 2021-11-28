@@ -6,6 +6,9 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "main.scss";`,
   },  
+  devIndicators: {
+    autoPrerender: false,
+  }, 
 }
 
 

@@ -43,7 +43,7 @@ class Carousel extends Component {
 
   renderSlide() {
     return (
-      <div className={styles.mainCarouselBlockText + " " + styles.container}>
+      <div className={styles.mainCarouselBlockText}>
         <p className={styles.mainCarouselCaption + " " + styles.colorWhite}>
           {this.props.data[this.state.activeSlide].caption}
         </p>
@@ -87,7 +87,7 @@ class Carousel extends Component {
 
   renderDots() {
     return (
-      <div className={styles.blockDots+" " +styles.container}>
+      <div className={styles.blockDots + " " + styles.container}>
         {this.props.data.map((item, i) => (
           <span
             key={i}
@@ -104,20 +104,17 @@ class Carousel extends Component {
   render() {
     return (
       <div className={styles.carousel}>
-        <picture className={styles.mainCarouselPicture}>
-          <source srcSet="images/background.png" media="(min-width: 768px)" />
-          <source srcSet="images/background_carousel.png" />
-          <img
-            srcSet="images/background_carousel.png"
-            alt={"main page carousel"}
-          />
-        </picture>
-        {/* TODO выровнять под flex */}
-        <div className={styles.container}> 
-          {this.renderArrow("right")}
-          {this.renderSlide()}
-          {this.renderArrow("left")}
-          {this.renderDots()}
+        <div className={styles.mainPicture}>
+          <div className={styles.container}>
+            <div className={styles.wrapperGrid}>
+             
+                {this.renderArrow("left")}
+                {this.renderSlide()}
+                {this.renderArrow("right")}
+                {this.renderDots()}
+              
+            </div>
+          </div>
         </div>
       </div>
     );

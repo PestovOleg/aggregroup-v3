@@ -1,14 +1,21 @@
+.navbarWrapper {
+  top: 0;
+  position: sticky;
+  z-index: 1500;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
-  position: sticky;
-  z-index: 1500;
   font-size: $menu-font-size-lg;
-
-  @media (max-width: 1440px) {
+  @media only screen and (max-width: 1199px) {
     font-size: $menu-font-size-md;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 719px) {
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
   }
 }
 
@@ -25,4 +32,23 @@
 
 .icons > .cartIcon {
   margin-left: 10px;
+}
+
+.menuBlock {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hamburgerMenu {
+  margin-left: 42px;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.hideBlock {
+  @media only screen and (max-width: 719px) {
+    display: none;
+  }
 }

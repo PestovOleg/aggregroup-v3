@@ -4,6 +4,7 @@ $main-theme-color-orange: #ea5400;
 $main-theme-color-white: #ffffff;
 $main-theme-color-grey: #e5e5e5;
 $main-theme-color-dark-grey: #DADADA;
+$main-theme-color-solid-grey: #9D9D9D;
 $main-theme-color-black: #1A242A;
 
 $main-text-color-white: #ffffff;
@@ -34,5 +35,8 @@ $icon-hover: #ea5400;
     }
     &White {
       background-color: $main-theme-color-white;
+    }
+    &Black {
+      background-color: $main-theme-color-black;
     }
 }

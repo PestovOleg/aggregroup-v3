@@ -1,6 +1,6 @@
 .menuList {
   padding: 0 0;
-  & > li {
+  & li {
     list-style-type: none;
     display: inline;
     margin: 0 10px;
@@ -8,15 +8,11 @@
       color: $main-theme-color-white;
       text-decoration: none;
       &:hover {
-        color: $main-theme-color-green;
         text-decoration: underline;
-        font-weight: bold;
         text-underline-offset: 10px;
       }
       &:active {
-        color: $main-theme-color-green;
         text-decoration: underline;
-        font-weight: bold;
       }
     }
   }

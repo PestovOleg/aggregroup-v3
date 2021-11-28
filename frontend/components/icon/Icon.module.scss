@@ -10,8 +10,23 @@
     width: 33px;
     height: 33px;
   }
-  &SVGPath { //TODO разобраться с наведением на окрашивании другой области
+  &SVGPath {
+    //TODO разобраться с наведением на окрашивании другой области
+    fill: $main-theme-color-black;
+    &:hover {
+      fill: $icon-hover;
+    }
+  }
+  &SVGPathGreen {
+    //TODO разобраться с наведением на окрашивании другой области
     fill: $main-theme-color-green;
+    &:hover {
+      fill: $icon-hover;
+    }
+  }
+  &SVGPathBlack {
+    //TODO разобраться с наведением на окрашивании другой области
+    fill: $main-theme-color-black;
     &:hover {
       fill: $icon-hover;
     }

@@ -1,10 +1,167 @@
-@import "./pages/RuHome.module";
-
+//@import "./pages/RuHome.module";
+.section {
+  padding-bottom: 92px;
+}
 .sectionBlock {
-    padding: 100px 0 50px 0;
+  padding: 50px 0 50px 0;
+  @media screen and (max-width: 719px) {
+    padding: 30px 10px 30px 10px;
+  }
 }
 
+.carousel {
+  top: -80px;
+  position: relative;
+  margin-bottom: -85px;
+}
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
+  @media screen and (max-width: 959px) {
+    flex-direction: column;
+  }
+}
+.linkCardBlockWrapper {
+  
+  display: grid;
+  align-content: center;
+  @media screen and (min-width: 1200px) {
+    height: 264px;
+  }
+}
+.wrapperServices {
+  margin-top: 30px;
+  display: grid;
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
 
+    gap: 20px;
+  }
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    gap: 15px;
+  }
 
+  @media screen and (max-width: 959px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr/100%;
+    justify-items: stretch;
+    gap: 11px;
+  }
+  @media screen and (max-width: 719px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr/100%;
+    justify-items: stretch;
+    gap: 8px;
+    margin: 0 10px 0 10px;
+  }
+}
+
+.wrapperLinkCard {
+  display: grid;
+  @media screen and (min-width: 960px) {
+    height: 300px;
+    align-items: center;
+    grid-template: 100%/1fr 1fr 1fr;
+    justify-items: stretch;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 959px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr/100%;
+    justify-items: stretch;
+    gap: 15px;
+  }
+  @media screen and (max-width: 719px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr/100%;
+    justify-items: stretch;
+    gap: 10px;
+    margin: 0 10px 0 10px;
+  }
+}
+
+.card {
+  &DescriptionLeft {
+    padding: 50px 70px 50px 0;
+    line-height: 30px;
+    width: 55%;
+    font-size: 18px;
+    align-self: center;
+    @media screen and (max-width: 1199px) {
+      line-height: 24px;
+      font-size: 14px;
+      padding: 40px 50px 40px 0;
+    }
+    @media screen and (max-width: 959px) {
+      width: 100%;
+      line-height: 20px;
+      font-size: 12px;
+      padding: 20px 40px 20px 0;
+    }
+    @media screen and (max-width: 719) {
+      width: 100%;
+      padding: 20px 30px 20px 0;
+    }
+    margin: auto;
+  }
+  &DescriptionRight {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 45%;
+    padding: 50px 50px 50px 50px;
+    border-left: $main-theme-color-orange 4px solid;
+    align-self: center;
+    @media screen and (max-width: 1199px) {
+      line-height: 22px;
+      font-size: 14px;
+      padding: 45px 17px 44px 30px;
+    }
+    @media screen and (max-width: 959px) {
+      width: 100%;
+      line-height: 18px;
+      padding: 26px 10px 19px 26px;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 719) {
+      width: 100%;
+      padding: 26px 10px 19px 26px;
+    }
+  }
+}
+
+.trSection {
+  border: 1px solid $main-theme-color-dark-grey;
+}
+
+.randomVendorsBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.lowHeader {
+  margin-bottom: 20px;
+}
+
+.sectionServices {
+  background-image: url("../public/images/background_service.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.newsH1Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}

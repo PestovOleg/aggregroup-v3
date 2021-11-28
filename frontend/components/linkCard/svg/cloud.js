@@ -1,4 +1,4 @@
-export default function Cloud (props) {
+export default function Cloud(props) {
   return (
     <svg
       width="40"

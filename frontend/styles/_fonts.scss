@@ -1,4 +1,4 @@
-@import "./mixins";
+@import "./mixins/mixins";
 
 @font-face {
   font-family: "Styrene";
@@ -46,12 +46,12 @@ $h6-main-page-lg: 18px;
 
 .lowHeader{
   @include h6MainPage;
-  margin: auto;
+  margin: 0;
 }
 
 .bigHeader{
   @include h1MainPage;
-  margin: auto;
+  margin: 0;
 }
 
 .text {
@@ -60,4 +60,12 @@ $h6-main-page-lg: 18px;
 
 .hLinkCard {
   @include hLinkCard;
+}
+
+.hLinkCardNews {
+  @include hLinkCardNews;
+}
+
+.footerFontSize {
+  @include footerFontSize;
 }

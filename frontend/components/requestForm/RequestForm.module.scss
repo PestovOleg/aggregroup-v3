@@ -1,0 +1,36 @@
+.inputSize {
+  height: 71px;
+}
+
+.formWrapper {
+  margin-top: 30px;
+  display: grid;
+
+  @media screen and (min-width: 960px) {
+    grid-template: 100%/1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 959px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr 1fr/1 fr;
+    justify-items: stretch;
+    gap: 15px;
+  }
+  @media screen and (max-width: 719px) {
+    align-items: center;
+    grid-template: 1fr 1fr 1fr 1fr/100%;
+    justify-items: stretch;
+    gap: 10px;
+    margin: 0 10px 0 10px;
+  }
+}
+
+.checkBoxWrapper {
+  margin-top: 20px;
+}
+.checkBox {
+  margin-left: 0;
+  margin-right: 10px;
+}

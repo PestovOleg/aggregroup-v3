@@ -3,8 +3,19 @@
 @import "./colors";
 
 .container {
-  max-width: 1200px;
+  
   margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (max-width: 1199px) {
+    max-width: 800px;
+  }
+  @media screen and (max-width: 959px) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 719px) {
+    max-width: 600px;
+  }  
+
 }
 
 .containerChild {
@@ -25,4 +36,16 @@
     margin-bottom: 3px;
     text-decoration: none;
   }
+}
+
+.m0 {
+  margin: 0;
+}
+
+.noneDisplay {
+  display: none;
+}
+
+.display {
+  display: block;
 }

@@ -1,11 +1,11 @@
 import styles from "./Menu.module.scss";
 import Link from "next/link";
 
-export default function Menu() {
+export default function Menu(props) {
   return (
-    <ul className={styles.menuList + " " + styles.textColorWhite}>
+    <ul className={styles.menuList + " " + styles.textColorWhite+" "+ `${props.cname}`}>
       <li>
-        <Link href="/ru">Программное обеспечение</Link>
+        <Link href="/vendors">Программное обеспечение</Link>
       </li>
       <li>
         <Link href="/ru">Оборудование</Link>

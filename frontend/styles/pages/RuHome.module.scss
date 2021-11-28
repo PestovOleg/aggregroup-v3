@@ -1,39 +1,38 @@
 .carousel {
-    top: -80px;
-    position: relative;
-    margin-bottom: -85px;
+  top: -80px;
+  position: relative;
+  margin-bottom: -85px;
 }
 
 .wrapper {
-    display: flex;
+  display: flex;
+  
 }
 
 .wrapperLinkCard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
 }
 
 .card {
-    
-
-    &DescriptionLeft{
-        padding: 50px 70px 50px 0;
-        line-height: 30px;
-        width: 55%;
-        margin: auto;
-    }
-    &DescriptionRight{
-        padding: 50px 50px 50px 50px;
-        font-weight: bold;
-        line-height: 30px;
-        width: 45%;
-        margin: auto;
-        border-left: $main-theme-color-orange 4px solid;
-    }
+  &DescriptionLeft {
+    padding: 50px 70px 50px 0;
+    line-height: 30px;
+    width: 55%;
+    margin: auto;
+  }
+  &DescriptionRight {
+    padding: 50px 50px 50px 50px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 45%;
+    margin: auto;
+    border-left: $main-theme-color-orange 4px solid;
+  }
 }
 
-.trSection{
-    border: 1px solid $main-theme-color-dark-grey;
+.trSection {
+  border: 1px solid $main-theme-color-dark-grey;
 }

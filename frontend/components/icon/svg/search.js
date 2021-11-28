@@ -1,6 +1,6 @@
 import styles from "../Icon.module.scss";
 
-export default function Search() {
+export default function Search(props) {
   return (
     <svg
       className={styles.icon + " " + styles.iconMd}
@@ -10,7 +10,7 @@ export default function Search() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        className={styles.iconSVGPath}
+        className={props.cname}
         d="M46 23C46 35.7026 35.7026 46 23 46C10.2975 46 0 35.7026 0 23C0 10.2975 10.2975 0 23 0C35.7026 0 46 10.2975 46 23Z"
       />
       <path

@@ -1,0 +1,16 @@
+.clientCard {
+    width: 285px;
+    height: 204px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imageWrapper {
+    width:200px;
+    height: 100px;
+    position: relative;
+    align-self: center;
+    cursor: pointer;
+}

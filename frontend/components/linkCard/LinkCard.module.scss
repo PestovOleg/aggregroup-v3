@@ -1,58 +1,80 @@
 .linkCard {
   background-color: $main-theme-color-white;
-  height: 240px;
-  width: 32%;
+
+  @media screen and (min-width: 960px) {
+    height: 240px;
+  }
+
+  @media screen and (max-width: 959px) {
+    height: 140px;
+  }
+  @media screen and (max-width: 719px) {
+    height: 130px;
+  }
+  
+
   &:hover {
-    background: url("../../public/909\ 2.png");
+    background: url("../../public/card_background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 264px;
+    @media screen and (min-width: 1200px) {
+      height: 264px;
+    }
+
     align-self: center;
+    cursor: pointer;
+    color: $main-theme-color-white;
+    & .dateBlockWrapper {
+      color: $main-theme-color-white;
+    }
     & .linkCardBlock {
       right: 0;
       top: 0;
     }
-    & .caption {
-      color: $main-theme-color-white;
-    }
-    & .link {
+    & .hLink {
       color: $main-theme-color-white;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
+    & .hLinkNews {
+      color: $main-theme-color-white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    & svg path {
+      fill: $main-theme-color-white;
+    }
+  }
+  &Block {
+    height: 8px;
+    width: 8px;
+    background-color: $main-theme-color-orange;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 
+.hLink {
+  color: $main-theme-color-green;
+  text-decoration: none;
+}
+.hLinkNews {
+  color: $main-theme-color-black;
+  text-decoration: none;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 20px;
-  align-items: baseline;
   position: relative;
 }
 
-.linkCardBlock {
-  height: 8px;
-  width: 8px;
-  background-color: $main-theme-color-orange;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  
-}
-
-.caption {
-  margin-bottom: 50px;
-}
-
-.link {
-  color: $main-theme-color-white;
-  text-decoration: none;
-  &:hover {
-    color: $main-theme-color-green;
-    text-decoration: none;
-    font-weight: bold;
-    text-underline-offset: 10px;
-  }
+.dateBlockWrapper {
+  display: flex;
+  justify-content: space-between;
+  color: $main-theme-color-solid-grey;
 }
