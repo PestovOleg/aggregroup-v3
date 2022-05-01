@@ -1,9 +1,9 @@
 import { newsAction } from "./constants";
-import { api } from "../../lib/utils";
+import { apiInstance } from "../../utils/api";
 
 export const getLastNews = () => {
     return async function (dispatch) {
-      return api.get("/news/lastNews").then((res) => {
+      return apiInstance.get("/news/lastNews").then((res) => {
         dispatch({ type: newsAction.GET_LAST_NEWS, payload: res.data });
       });
     };

@@ -1,11 +1,11 @@
 version: '3.9'
 
 services: 
-    db:
+    postgres:
         image: postgres:12.8
-        container_name: db.dev
+        container_name: aggregroup-v3-db.dev
         volumes:
-            - pgdata:/var/lib/postgresql/data
+            - pgdata2:/var/lib/postgresql/data
             - /tmp/backup:/backup
         environment:
             POSTGRES_DB: aggregroup
@@ -13,19 +13,17 @@ services:
             POSTGRES_PASSWORD: aggregroup_user        
         restart: always    
     
-    web:
+    frontend:
         build: 
             context: ./frontend
             dockerfile: Dockerfile.dev
-        container_name: web.dev
+        container_name: aggregroup-v3-web.dev
         ports:
             - "3000:3000"
         environment:
             HOST: 0.0.0.0
         volumes: 
             - ./frontend:/opt/aggregroup/frontend
-            - /opt/aggregroup/node_modules
-            - /opt/aggregroup/next
         restart: always       
         command: >
             sh -c "npm install &&
@@ -33,7 +31,7 @@ services:
       
         
 volumes:
-    pgdata: 
+    pgdata2: 
 
 
           

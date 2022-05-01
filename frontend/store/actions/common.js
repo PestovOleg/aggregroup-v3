@@ -1,15 +1,16 @@
 import { commonAction } from "./constants";
-import { api } from "../../lib/utils";
+import { apiInstance } from "../../utils/api";
 
 export const updateCarousel = () => {
   return async function (dispatch) {
-    return api.get("/captions").then((res) => {
+    return apiInstance.get("/captions").then((res) => {
+      console.log(res)
       dispatch({ type: commonAction.UPDATE_CAROUSEL, payload: res.data });
     });
   };
 };
 
-export const onScrollPage =()=> (dispatch) => {
+export const onScrollPage = () => (dispatch) => {
   return dispatch({ type: commonAction.ON_SCROLL_PAGE });
 };
 
